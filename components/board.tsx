@@ -1,7 +1,12 @@
 import React from "react";
 
+interface Props {
+	color: string,
+	title: string,
+	tasks: JSX.Element[]
+}
 
-export function Board(props: any) {
+export function Board(props: Props) {
   return (
 		<div className="flex flex-col shadow-xl rounded-xl">
 			<div className={`flex justify-center p-3 text-md font-medium text-slate-50 rounded-t-xl ${props.color}`}>
