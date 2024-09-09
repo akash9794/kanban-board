@@ -2,8 +2,8 @@ import React from "react";
 
 interface Props {
 	color: string,
-	title: string,
-	tasks: JSX.Element[]
+	title: JSX.Element | string,
+	tasks: (JSX.Element | undefined)[]
 }
 
 export function Board(props: Props) {

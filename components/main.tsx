@@ -4,10 +4,11 @@ import { CreateTaskModal } from "./create-task-modal";
 import dummy from "../db/dummy.json";
 
 function Tasks(status: string) {
-  return dummy.map((task, index) => {
+  return dummy.map(task => {
     if (task.status === status) {
       return <Task key={task.id} priority={task.priority} title={task.title} description={task.description} date={task.date} />;
     }
+
   });
 }
 
